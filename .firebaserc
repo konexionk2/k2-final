@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "k2-network-hub"
+  },
+  "targets": {
+    "k2-network-hub": {
+      "hosting": {
+        "k2-network-hub": [
+          "k2-network-hub"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
