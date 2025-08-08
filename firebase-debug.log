@@ -1,0 +1,128 @@
+[debug] [2025-08-08T01:10:40.609Z] ----------------------------------------------------------------------
+[debug] [2025-08-08T01:10:40.612Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tj-n0\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project k2-network-hub --non-interactive
+[debug] [2025-08-08T01:10:40.612Z] CLI Version:   14.11.2
+[debug] [2025-08-08T01:10:40.613Z] Platform:      win32
+[debug] [2025-08-08T01:10:40.613Z] Node Version:  v22.18.0
+[debug] [2025-08-08T01:10:40.613Z] Time:          Thu Aug 07 2025 20:10:40 GMT-0500 (hora de Ecuador)
+[debug] [2025-08-08T01:10:40.613Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-08T01:10:40.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-08T01:10:40.813Z] > authorizing via signed-in user (juliotoledo66@gmail.com)
+[debug] [2025-08-08T01:10:40.813Z] [iam] checking project k2-network-hub for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-08T01:10:40.814Z] Checked if tokens are valid: false, expires at: 1754341142441
+[debug] [2025-08-08T01:10:40.814Z] Checked if tokens are valid: false, expires at: 1754341142441
+[debug] [2025-08-08T01:10:40.814Z] > refreshing access token with scopes: []
+[debug] [2025-08-08T01:10:40.816Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-08-08T01:10:40.816Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-08T01:10:41.205Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-08-08T01:10:41.205Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-08-08T01:10:41.220Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/k2-network-hub:testIamPermissions [none]
+[debug] [2025-08-08T01:10:41.220Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/k2-network-hub:testIamPermissions x-goog-quota-user=projects/k2-network-hub
+[debug] [2025-08-08T01:10:41.220Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/k2-network-hub:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-08T01:10:42.007Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/k2-network-hub:testIamPermissions 200
+[debug] [2025-08-08T01:10:42.007Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/k2-network-hub:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-08T01:10:42.010Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:42.010Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:42.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/k2-network-hub [none]
+[debug] [2025-08-08T01:10:42.699Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/k2-network-hub 200
+[debug] [2025-08-08T01:10:42.699Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/k2-network-hub {"projectId":"k2-network-hub","projectNumber":"747130172623","displayName":"Konexion K2","name":"projects/k2-network-hub","resources":{"hostingSite":"k2-network-hub"},"state":"ACTIVE","etag":"1_aceb37a6-2a78-4f21-97bf-42067f02f01a"}
+[debug] [2025-08-08T01:10:44.842Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:44.842Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:44.842Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites pageToken=&pageSize=10
+[debug] [2025-08-08T01:10:45.795Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites 200
+[debug] [2025-08-08T01:10:45.796Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites {"sites":[{"name":"projects/k2-network-hub/sites/k2-network-hub","defaultUrl":"https://k2-network-hub.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-08-08T01:10:45.797Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:45.797Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:45.798Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites 
+[debug] [2025-08-08T01:10:46.130Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites 200
+[debug] [2025-08-08T01:10:46.130Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites {"sites":[{"name":"projects/k2-network-hub/sites/k2-network-hub","defaultUrl":"https://k2-network-hub.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-08-08T01:10:46.131Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:46.131Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:46.131Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/k2-network-hub/webApps/-/config [none]
+[debug] [2025-08-08T01:10:46.609Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/k2-network-hub/webApps/-/config 200
+[debug] [2025-08-08T01:10:46.609Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/k2-network-hub/webApps/-/config {"projectId":"k2-network-hub","storageBucket":"k2-network-hub.firebasestorage.app","apiKey":"AIzaSyBDwkADWBXcY5LTpH8RkU40OVJ42FpEEfc","authDomain":"k2-network-hub.firebaseapp.com","messagingSenderId":"747130172623"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-08-08T01:10:51.900Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:51.900Z] Checked if tokens are valid: true, expires at: 1754619040205
+[debug] [2025-08-08T01:10:51.900Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites/k2-network-hub [none]
+[debug] [2025-08-08T01:10:52.653Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites/k2-network-hub 200
+[debug] [2025-08-08T01:10:52.654Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/k2-network-hub/sites/k2-network-hub {"name":"projects/k2-network-hub/sites/k2-network-hub","defaultUrl":"https://k2-network-hub.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.4.5
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] Failed to compile.
+
+
+[info] ./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/globals.css
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\K2 app\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+
+Import trace for requested module:
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/globals.css
+./app/globals.css
+
+./app/globals.css
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\K2 app\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+    at tryRunOrWebpackError (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:316119)
+    at __webpack_require_module__ (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:131532)
+    at __nested_webpack_require_161494__ (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:130967)
+    at C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:131824
+    at symbolIterator (C:\K2 app\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+    at done (C:\K2 app\node_modules\next\dist\compiled\neo-async\async.js:1:14824)
+    at Hook.eval [as callAsync] (eval at create (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:14:9224), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:14:6378)
+    at C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:130687
+    at symbolIterator (C:\K2 app\node_modules\next\dist\compiled\neo-async\async.js:1:14402)
+-- inner error --
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\K2 app\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\K2 app\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+    at Object.<anonymous> (C:\K2 app\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[2]!C:\K2 app\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[3]!C:\K2 app\app\globals.css:1:7)
+    at C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:962717
+    at Hook.eval [as call] (eval at create (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:14:9002), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:14:6272)
+    at C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:131565
+    at tryRunOrWebpackError (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:316073)
+    at __webpack_require_module__ (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:131532)
+    at __nested_webpack_require_161494__ (C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:130967)
+    at C:\K2 app\node_modules\next\dist\compiled\webpack\bundle5.js:29:131824
+    at symbolIterator (C:\K2 app\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+
+Generated code for C:\K2 app\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[2]!C:\K2 app\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[10].use[3]!C:\K2 app\app\globals.css
+
+Import trace for requested module:
+./app/globals.css
+
+
+[info] 
+
+[info] > Build failed because of webpack errors
+
+[debug] [2025-08-08T01:11:00.717Z] Error: ENOENT: no such file or directory, open 'C:\K2 app\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

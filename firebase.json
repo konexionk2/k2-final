@@ -1,11 +1,7 @@
 {
   "hosting": {
     "site": "k2-network-hub",
-    "public": ".next",
-    "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
-    "rewrites": [
-      { "source": "**", "function": "nextApp" }
-    ]
+    "source": "."
   },
   "functions": {
     "source": "functions",

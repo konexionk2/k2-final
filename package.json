@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare:functions": "node scripts/prepare-functions-build.mjs",
+    "deploy:firebase": "npm run build && firebase experiments:enable webframeworks && firebase deploy --only hosting --project k2-network-hub --non-interactive"
   },
   "dependencies": {
     "firebase": "^10.0.0",
